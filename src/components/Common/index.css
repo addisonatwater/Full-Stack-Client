@@ -1,0 +1,196 @@
+.mainHeader {
+    background-color: var(--darkpurple);
+}
+
+
+@media screen and (max-width: 768px) {
+    .mainHeader > .ant-row {
+        margin-right: 30px !important;
+    }
+
+}
+
+.Default-darkpurple {
+    background-color: var(--darkpurple);
+    border-color: var(--darkpurple);
+    width: fit-content;
+}
+
+.Default-darkpurple:hover,
+.Default-darkpurple:focus {
+    background-color: var(--darkpurple);
+    border-color: var(--darkpurple);
+}
+
+.Default-lightpurple {
+    background-color: var(--lightpurple);
+    border-color: var(--lightpurple);
+    width: fit-content;
+}
+
+.Default-lightpurple:hover,
+.Default-lightpurple:focus {
+    background-color: var(--darkpurple) !important;
+    border-color: var(--lightpurple);
+}
+
+.Default-white {
+    color: var(--darkpurple);
+    width: fit-content;
+}
+
+.Default-red {
+    background-color: red
+}
+
+.Default-white:hover,
+.Default-white:focus {
+    color: var(--midpurple);
+    border-color: var(--midpurple);
+}
+
+.Border-8 {
+    border-radius: 8px;
+}
+
+.Border-15 {
+    border-radius: 15px;
+}
+
+.Padding-20 {
+    padding: 20px;
+    background-color: var(--white);
+}
+
+
+.CustomSearch {
+    background-color: #F5F3FF;
+}
+
+.Header-SearchBar {
+    flex: 1;
+    text-align: center;
+}
+
+.CustomSearch>input::placeholder,
+.CustomSearch>input::-ms-input-placeholder,
+.CustomSearch>input::-ms-input-placeholder {
+    color: var(--darkpurple);
+}
+
+.CustomSearch:hover {
+    background-color: var(--darkpurple);
+}
+
+.CustomSearchContainer .DataResult {
+    visibility: hidden;
+
+}
+
+.CustomSearchContainer:hover .DataResult,
+.CustomSearchContainer .ant-input-affix-wrapper-focused+.DataResult {
+    visibility: visible;
+}
+
+input[type=text]:focus,
+input[type=password]:focus .CustomSearchContainer+.CustomSearch {
+    background-color: none;
+}
+
+/* Dropdown menu */
+.ant-dropdown-menu {
+    text-align: right;
+}
+
+.Custom-Menu {
+    color: var(--midpurple)
+}
+
+.Custom-Menu:hover {
+    color: var(--darkpurple)
+}
+.DataResult {
+    position: absolute;
+    background-color: var(--darkpink);
+    overflow: hidden;
+    overflow-y: auto;
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+    z-index: 100;
+    padding-top: 13px;
+    margin-top: 5px;
+}
+
+.DataResult::-webkit-scrollbar {
+    display: none;
+}
+
+.DataItem>p {
+    padding: 5px;
+    text-indent: 10px;
+    color: var(--white) !important
+}
+
+.DataItem>p:hover {
+    background-color: var(--lightpink);
+    color: var(--darkpurple) !important
+}
+
+/* Right Buttons */
+.Header-RightButtons {
+    margin-left: auto;
+}
+/* Trending */
+.Trending {
+    text-align: center;
+}
+
+.Trending-Scroll {
+    word-break: "break-word";
+    overflow-y: "scroll";
+    scroll-behavior: "smooth";
+    height: 300;
+}
+
+/* Row Images */
+
+.RowImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--lightpink);
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.OurMembers-CategoryButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.CardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.RowImages-Cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
