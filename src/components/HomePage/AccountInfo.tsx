@@ -1,5 +1,5 @@
 import { AntDesignOutlined } from "@ant-design/icons";
-import { Avatar, Col, Row, Typography } from "antd";
+import { Avatar, Col, Row, Typography,Button } from "antd";
 import Axios from "axios";
 import React, { useEffect } from "react";
 
@@ -7,9 +7,11 @@ export function AccountInfo(): JSX.Element {
   const [user, setUser] = React.useState<any>(null);
 
   useEffect(() => {
-    Axios.get("https://full-stack-fotoflix.herokuapp.com/:3000/api/get").then((response) => {
-      setUser(response.data);
-    });
+    Axios.get("https://full-stack-fotoflix.herokuapp.com/api/get").then(
+      (response) => {
+        setUser(response.data);
+      }
+    );
   }, []);
 
   return (
@@ -20,10 +22,15 @@ export function AccountInfo(): JSX.Element {
             size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
             icon={<AntDesignOutlined />}
           />
+          <Button
+          size="middle"
+          
+          />
         </Col>
         <Col flex={5}>
           <Typography.Title level={2} className="HomePage-AccountInfo">
             {user && user[1].Username}
+
             {/* {editableStr} */}
           </Typography.Title>
         </Col>
